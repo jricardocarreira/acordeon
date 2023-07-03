@@ -1,4 +1,4 @@
-# Carrossel Imagens
+# Card Acordeon
 
 Esse projeto consistiu em construir um card de perguntas e respostas com efeito de Acordeon.
 
