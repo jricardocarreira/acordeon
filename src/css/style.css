@@ -9,7 +9,7 @@
 .card {
     display: flex;
     width: 655px;
-    height: 347px;
+    min-height: 347px;
     border-radius: 21px;
     background-color: #fff;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
@@ -19,7 +19,7 @@
 
 .card .imagem {
     width: 278px;
-    height: 293px;
+    min-height: 293px;
     position: absolute;
     left: -90px;
 }
@@ -49,20 +49,21 @@
 .pergunta h3>span {
     font-size: 1.7rem;
     font-weight: 500;
-    transition: 0.5s ease;
+    transition: 0.2 ease;
 }
 
-.pergunta .texto {
+.pergunta h3>span:hover {
+    color: #ee4400;
+}
+
+.pergunta .resposta {
     font-size: 1.5rem;
     font-weight: 300;
     padding-top: 10px;
-    visibility: hidden;
     display: none;
-    transition: 0.5s ease;
 }
 
-.pergunta .mostrar {
-    visibility: visible;
+.pergunta.ativo .resposta {
     display: block;
 }
 
@@ -81,9 +82,9 @@ hr {
     border-color: #aaaaaa transparent transparent transparent;
     border-radius: 2px;
     margin-right: 13px;
-    transition: 0.5s ease-out;
+    transition: 0.2s ease;
 }
 
-.triangulo-clicado {
+.pergunta.ativo .triangle {
     border-color: #ee4400 transparent transparent transparent;
 }
